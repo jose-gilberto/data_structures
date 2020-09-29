@@ -12,6 +12,10 @@ class DynamicArray:
     """Retorna o número de elementos armazenados no array."""
     return self._n
 
+  def __setitem__(self, k, obj):
+    """Modifica o elemento no índice k pelo novo objeto passado."""
+    self._A[k] = obj
+
   def __getitem__(self, k):
     """Retorna o elemento no índice k."""
     if not 0 <= k < self._n:
